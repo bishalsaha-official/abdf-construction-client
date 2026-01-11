@@ -1,6 +1,7 @@
 import Banner from './Banner';
 import CompanySnapshot from './CompanySnapshot';
 import FeaturedProjects from './FeaturedProjects';
+import SafetyQuality from './SafetyQuality';
 import ServicesOverview from './ServicesOverview';
 import StatsCounter from './StatsCounter';
 import WhyChooseUs from './WhyChooseUs';
@@ -16,6 +17,7 @@ const Home = () => {
             <StatsCounter></StatsCounter>
             <FeaturedProjects></FeaturedProjects>
             <WorkProcess></WorkProcess>
+            <SafetyQuality></SafetyQuality>
         </div>
     );
 };
