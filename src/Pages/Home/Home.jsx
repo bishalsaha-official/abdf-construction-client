@@ -4,6 +4,7 @@ import FeaturedProjects from './FeaturedProjects';
 import ServicesOverview from './ServicesOverview';
 import StatsCounter from './StatsCounter';
 import WhyChooseUs from './WhyChooseUs';
+import WorkProcess from './WorkProcess';
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <WhyChooseUs></WhyChooseUs>
             <StatsCounter></StatsCounter>
             <FeaturedProjects></FeaturedProjects>
+            <WorkProcess></WorkProcess>
         </div>
     );
 };
