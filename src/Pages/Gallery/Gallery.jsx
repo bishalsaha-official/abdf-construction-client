@@ -23,7 +23,7 @@ const Gallery = () => {
             category: "healthcare",
             description: "State-of-the-art medical facility expansion",
             year: "2022",
-            url: "https://images.unsplash.com/photo-1516549655669-dfbf10d0c9b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+            url: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
         },
         {
             id: 3,
@@ -111,7 +111,7 @@ const Gallery = () => {
             category: "progress",
             description: "Early earthwork and foundation preparation",
             year: "2023",
-            url: "https://images.unsplash.com/photo-1576671414121-aa0b80a5f2f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+            url: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
         },
         {
             id: 14,
@@ -119,7 +119,7 @@ const Gallery = () => {
             category: "structural",
             description: "Large-scale concrete placement operation",
             year: "2023",
-            url: "https://images.unsplash.com/photo-1556817416-1a6c6d31e9c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+            url: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
         },
         {
             id: 15,
@@ -151,7 +151,7 @@ const Gallery = () => {
             category: "team",
             description: "Final quality control inspection",
             year: "2023",
-            url: "https://images.unsplash.com/photo-1503387769-00a112127ca0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+            url: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
         }
     ];
 

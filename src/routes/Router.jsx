@@ -6,6 +6,8 @@ import Team from "../Pages/Team/Team";
 import Services from "../Pages/Services/Services";
 import Contact from "../Pages/Contact/Contact";
 import Gallery from "../Pages/Gallery/Gallery";
+import Projects from "../Pages/Projects/Projects";
+import ProjectDetails from "../Pages/Projects/ProjectDetails";
 
 export const router = createBrowserRouter([
     {
@@ -35,6 +37,14 @@ export const router = createBrowserRouter([
             {
                 path: '/gallery',
                 Component: Gallery
+            },
+            {
+                path: '/projects',
+                Component: Projects
+            },
+            {
+                path: "/projects/:slug", 
+                Component: ProjectDetails
             }
         ]
     },
