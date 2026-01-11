@@ -6,6 +6,7 @@ import { FaMapMarkerAlt, FaBuilding, FaCalendarAlt, FaExpandAlt } from 'react-ic
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { Link } from 'react-router';
 
 const FeaturedProjects = () => {
     const ref = useRef(null);
@@ -317,10 +318,12 @@ const FeaturedProjects = () => {
                     transition={{ duration: 0.6, delay: 0.8 }}
                     className="text-center mt-12 pt-8 border-t border-gray-200"
                 >
-                    <button className="btn btn-primary bg-amber-600 hover:bg-amber-700 border-amber-600 hover:border-amber-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                        View Full Project Portfolio
-                        <FaBuilding className="ml-2" />
-                    </button>
+                    <Link to='/projects'>
+                        <button className="btn btn-primary bg-amber-600 hover:bg-amber-700 border-amber-600 hover:border-amber-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                            View Full Project Portfolio
+                            <FaBuilding className="ml-2" />
+                        </button>
+                    </Link>
                 </motion.div>
             </div>
         </section>

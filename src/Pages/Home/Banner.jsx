@@ -11,6 +11,7 @@ import 'swiper/css/navigation';
 import constructionSite1 from '../../assets/Banner/hero1.jpg';
 import constructionSite2 from '../../assets/Banner/hero2.jpg';
 import constructionSite3 from '../../assets/Banner/hero3.jpg';
+import { Link } from 'react-router';
 
 const Banner = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -32,8 +33,10 @@ const Banner = () => {
             title: "Building Your Future with Precision",
             subtitle: "Commercial & industrial construction experts delivering excellence since 1998",
             image: constructionSite1,
-            primaryBtn: "Get a Quote",
-            secondaryBtn: "View Projects"
+            primaryBtn: "Contact Us",
+            secondaryBtn: "View Projects",
+            slug1: '/contact',
+            slug2: '/projects'
         },
         {
             id: 2,
@@ -41,15 +44,19 @@ const Banner = () => {
             subtitle: "From ground-breaking to completion, we build with integrity and expertise",
             image: constructionSite2,
             primaryBtn: "Our Services",
-            secondaryBtn: "View Projects"
+            secondaryBtn: "View Projects",
+            slug1: '/services',
+            slug2: '/projects'
         },
         {
             id: 3,
             title: "Quality Craftsmanship Guaranteed",
             subtitle: "Licensed, bonded, and insured for your complete peace of mind",
             image: constructionSite3,
-            primaryBtn: "Get a Quote",
-            secondaryBtn: "Meet Our Team"
+            primaryBtn: "Contact Us",
+            secondaryBtn: "Meet Our Team",
+            slug1: '/contact',
+            slug2: '/team'
         }
     ];
 
@@ -126,21 +133,25 @@ const Banner = () => {
                                             className={`flex ${isMobile ? 'flex-col space-y-4' : 'flex-row space-x-6'}`}
                                         >
                                             <motion.div variants={itemVariants}>
-                                                <button className="btn btn-primary btn-lg bg-amber-600 border-amber-600 hover:bg-amber-700 hover:border-amber-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                                                    {slide.primaryBtn}
-                                                    <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                                                    </svg>
-                                                </button>
+                                                <Link to={slide.slug1}>
+                                                    <button className="btn btn-primary btn-lg bg-amber-600 border-amber-600 hover:bg-amber-700 hover:border-amber-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                                                        {slide.primaryBtn}
+                                                        <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                                        </svg>
+                                                    </button>
+                                                </Link>
                                             </motion.div>
 
                                             <motion.div variants={itemVariants}>
-                                                <button className="btn btn-outline btn-lg border-2 border-white text-white hover:bg-white/10 hover:border-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
-                                                    {slide.secondaryBtn}
-                                                    <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                                    </svg>
-                                                </button>
+                                                <Link to={slide.slug2}>
+                                                    <button className="btn btn-outline btn-lg border-2 border-white text-white hover:bg-white/10 hover:border-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
+                                                        {slide.secondaryBtn}
+                                                        <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                                        </svg>
+                                                    </button>
+                                                </Link>
                                             </motion.div>
                                         </motion.div>
                                     </motion.div>

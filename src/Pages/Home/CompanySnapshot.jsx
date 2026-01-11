@@ -1,6 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
 import { FaHardHat, FaBuilding, FaUserCheck, FaAward } from 'react-icons/fa';
+import { Link } from 'react-router';
 
 // Import local images - these should be placed in src/assets/images/
 // const teamImage = '../../assets/company-team.jpg';
@@ -222,10 +223,12 @@ const CompanySnapshot = () => {
                             {/* CTA Button */}
                             <motion.div variants={itemVariants}>
                                 <div className="pt-4">
-                                    <button className="btn btn-primary bg-amber-600 hover:bg-amber-700 border-amber-600 hover:border-amber-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                                        Learn More About Our Company
-                                        <FaAward className="w-5 h-5 ml-2" />
-                                    </button>
+                                    <Link to='/about'>
+                                        <button className="btn btn-primary bg-amber-600 hover:bg-amber-700 border-amber-600 hover:border-amber-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                                            Learn More About Our Company
+                                            <FaAward className="w-5 h-5 ml-2" />
+                                        </button>
+                                    </Link>
                                 </div>
                             </motion.div>
                         </div>

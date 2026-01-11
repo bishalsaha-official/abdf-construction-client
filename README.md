@@ -1,16 +1,57 @@
-# React + Vite
+# Construction Company Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, professional, and fully responsive **construction company portfolio website** built using **React (Vite)**.  
+Designed with a strong industrial aesthetic, smooth animations, and clean architecture to build trust and convert visitors.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+- **React (Vite)**
+- **React Router DOM**
+- **Tailwind CSS**
+- **DaisyUI**
+- **Framer Motion**
+- **Swiper.js**
+- **React Icons**
+- **SweetAlert2**
+- **React Toastify**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> *Frontend-only project. No backend or APIs used.*
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Key Features
+
+- *Fully responsive* (mobile, tablet, desktop)
+- *Professional UI/UX* tailored for construction businesses
+- *Animated hero slider* and smooth transitions
+- *Reusable & modular components*
+- *Projects & project details pages*
+- *Team section with modal profiles*
+- *Gallery with image preview*
+- *Contact form UI with toast & alert feedback*
+- *SEO-friendly routing*
+- *Clean, developer-friendly code*
+
+---
+
+## Pages Included
+
+- Home  
+- About  
+- Services  
+- Projects  
+- Project Details  
+- Team  
+- Gallery  
+- Contact  
+- 404 Not Found  
+
+---
+
+## Installation & Setup
+
+```bash
+npm install
+npm run dev
