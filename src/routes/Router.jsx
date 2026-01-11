@@ -5,6 +5,7 @@ import About from "../Pages/About/About";
 import Team from "../Pages/Team/Team";
 import Services from "../Pages/Services/Services";
 import Contact from "../Pages/Contact/Contact";
+import Gallery from "../Pages/Gallery/Gallery";
 
 export const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
             {
                 path: '/contact',
                 Component: Contact
+            },
+            {
+                path: '/gallery',
+                Component: Gallery
             }
         ]
     },
